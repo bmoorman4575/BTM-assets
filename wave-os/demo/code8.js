@@ -227,6 +227,7 @@ gdjs.loggonCode.condition0IsTrue_0.val = false;
 {
 gdjs.loggonCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.loggonCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("backround"), gdjs.loggonCode.GDbackroundObjects1);
 gdjs.copyArray(runtimeScene.getObjects("fade"), gdjs.loggonCode.GDfadeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.loggonCode.GDpasswordObjects1);
 gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.loggonCode.GDusernameObjects1);
@@ -242,6 +243,26 @@ gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.loggonCode.GDusernameOb
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "fadeout");
 }{for(var i = 0, len = gdjs.loggonCode.GDfadeObjects1.length ;i < len;++i) {
     gdjs.loggonCode.GDfadeObjects1[i].setPosition(0,0);
+}
+}{for(var i = 0, len = gdjs.loggonCode.GDbackroundObjects1.length ;i < len;++i) {
+    gdjs.loggonCode.GDbackroundObjects1[i].setOpacity(0);
+}
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "wait");
+}}
+
+}
+
+
+{
+
+
+gdjs.loggonCode.condition0IsTrue_0.val = false;
+{
+gdjs.loggonCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 0.1, "wait");
+}if (gdjs.loggonCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("backround"), gdjs.loggonCode.GDbackroundObjects1);
+{for(var i = 0, len = gdjs.loggonCode.GDbackroundObjects1.length ;i < len;++i) {
+    gdjs.loggonCode.GDbackroundObjects1[i].setOpacity(gdjs.loggonCode.GDbackroundObjects1[i].getOpacity() + (10));
 }
 }}
 
@@ -265,7 +286,7 @@ gdjs.loggonCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtim
 }if ( gdjs.loggonCode.condition0IsTrue_0.val ) {
 {
 {gdjs.loggonCode.conditionTrue_1 = gdjs.loggonCode.condition1IsTrue_0;
-gdjs.loggonCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9444476);
+gdjs.loggonCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9950924);
 }
 }}
 if (gdjs.loggonCode.condition1IsTrue_0.val) {
