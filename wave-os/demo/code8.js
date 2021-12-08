@@ -265,7 +265,7 @@ gdjs.loggonCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtim
 }if ( gdjs.loggonCode.condition0IsTrue_0.val ) {
 {
 {gdjs.loggonCode.conditionTrue_1 = gdjs.loggonCode.condition1IsTrue_0;
-gdjs.loggonCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8435044);
+gdjs.loggonCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9444476);
 }
 }}
 if (gdjs.loggonCode.condition1IsTrue_0.val) {
